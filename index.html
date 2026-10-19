@@ -84,6 +84,25 @@ footer{background:#0a1426;color:#b8c7dc;border-color:#293b55}
 .cad-gallery img:nth-child(3){grid-column:1 / -1; width:100%; height:auto; max-height:none; aspect-ratio:16 / 8; object-fit:contain;}
 @media(max-width:600px){.cad-gallery img:nth-child(3){aspect-ratio:4 / 3;}}
 .lunar-gallery img.nasa-gantt-full{grid-column:1 / -1;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;display:block;background:#fff;}
+
+/* Requested final layout refinements */
+#projects .project.compact:has(.lunar-gallery){display:grid!important;grid-template-columns:1fr!important;gap:18px!important;align-items:start!important;padding:28px!important}
+#projects .project.compact:has(.lunar-gallery)>span.num{grid-column:1!important;position:static!important;display:block!important}
+#projects .project.compact:has(.lunar-gallery)>div:not(.lunar-gallery){grid-column:1!important;width:100%!important;max-width:100%!important;min-width:0!important;justify-self:stretch!important;text-align:center!important}
+#projects .project.compact:has(.lunar-gallery)>div:not(.lunar-gallery)>p:not(.tag){max-width:920px!important;margin:12px auto!important;line-height:1.7!important}
+#projects .project.compact:has(.lunar-gallery)>div.chips{display:flex!important;flex-wrap:wrap!important;justify-content:center!important;gap:9px!important}
+#projects .project.compact:has(.lunar-gallery)>div.lunar-gallery{grid-column:1!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important;width:100%!important;max-width:100%!important;min-width:0!important;align-items:stretch!important}
+#projects .project.compact:has(.lunar-gallery) .lunar-gallery img:not(.nasa-gantt-full){width:100%!important;max-width:100%!important;height:auto!important;aspect-ratio:16/9!important;object-fit:contain!important;background:#f6f7fa!important;grid-column:auto!important}
+#projects .project.compact:has(.lunar-gallery) .lunar-gallery img.nasa-gantt-full{grid-column:1/-1!important;width:100%!important;height:auto!important;max-height:none!important;aspect-ratio:auto!important;object-fit:contain!important;margin-top:8px!important}
+#projects .project.simulation-wide{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;align-items:center!important;gap:28px!important}
+#projects .project.simulation-wide>div{min-width:0!important;width:100%!important}
+#projects .project.simulation-wide>.gallery{display:flex!important;align-items:center!important;justify-content:center!important;max-width:100%!important}
+#projects .project.simulation-wide>.gallery img{display:block!important;width:100%!important;max-width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important}
+#skills .skills>div,#leadership .service-card{background:#14253d!important;color:#f3f7ff!important;border:1px solid #31435d!important;border-radius:20px!important}
+#skills .skills>div h3,#leadership .service-card h3{color:#f3f7ff!important}
+#skills .skills>div p,#leadership .service-card p{color:#c4d2e8!important}
+#skills .skills>div .tag,#leadership .service-card .tag{color:#e9f1ff!important}
+@media(max-width:900px){#projects .project.simulation-wide{grid-template-columns:1fr!important}#projects .project.compact:has(.lunar-gallery) .lunar-gallery{grid-template-columns:1fr!important}}
 </style></head><body>
 <header class="nav"><a class="brand" href="#top">PN<span>.</span></a><button aria-label="Toggle navigation" class="menu">☰</button><nav><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#cad-work">CAD</a><a href="#simulation">ANSYS</a><a href="#extracurricular">Extracurricular</a><a href="#leadership">Leadership &amp; Community Service</a><a href="#business">Business</a><a href="#skills">Skills</a></nav></header><main id="top">
 <section class="hero space-coaster-hero"><div><p class="eyebrow">AEROSPACE + MECHANICAL ENGINEERING</p><h1>Paul<br/>Norris<span>.</span></h1><p class="lead">Aerospace &amp; Mechanical Engineering student at UCF. Interested in hands-on design, autonomous systems, and the engineering behind extraordinary experiences.</p><div class="actions"><a class="btn primary" href="#experience">Professional Experience</a><a class="btn" href="#projects">Explore Projects</a></div></div><div class="hero-card portrait-card"><img alt="Portrait of Paul Norris" src="paul-headshot.jpg"/><div class="caption"><b>Engineering, driven by curiosity.</b><span>UCF • Aerospace + Mechanical</span></div></div></section>
