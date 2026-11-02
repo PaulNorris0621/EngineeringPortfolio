@@ -189,6 +189,59 @@ input,textarea{background:#15263c;color:#fff;border-color:#32465f}
  .nasa-project .lunar-gallery > img,.nasa-project .lunar-gallery > .nasa-gantt-button {height:225px;max-height:225px}
 }
 </style>
+
+<style id="targeted-homepage-contrast-simulation-fixes">
+/* Restore full-height original image artwork, without touching its image or palette. */
+html body .hero.space-coaster-hero {
+  display:block;
+  position:relative;
+  width:100%;
+  min-height:0;
+  height:auto;
+  aspect-ratio:1836 / 856;
+  padding:0;
+  background-position:center center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  overflow:hidden;
+}
+html body .hero.space-coaster-hero .actions {top:78%;left:4%}
+/* ANSYS card: evenly distribute text and video without overflowing the card. */
+#simulation.project.feature.simulation-wide {
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  align-items:center;
+  gap:clamp(22px,3vw,52px);
+}
+#simulation > div {min-width:0;max-width:100%}
+#simulation .gallery {display:block;min-width:0;width:100%}
+#simulation .gallery a {display:block;max-width:100%}
+#simulation .gallery img {
+  display:block;width:100%;height:auto;max-height:310px;
+  object-fit:contain;border-radius:14px;
+}
+#simulation h3 {font-size:clamp(24px,2.4vw,34px);line-height:1.15}
+/* Fix white-on-white cards while keeping the existing navy site colors. */
+#leadership .service-card,#skills .skills > div {
+  background:#132239;
+  color:#e9f1ff;
+  border-color:#26364d;
+}
+#leadership .service-card h3,#leadership .service-card p,
+#skills .skills > div h3,#skills .skills > div p {color:#e9f1ff}
+#leadership .service-card .tag {color:#8eb8ff}
+#skills .skills > div p {color:#b9cbe3}
+/* Restore readable call-to-action on the original pale background. */
+.cta {color:#111b32}
+.cta h2 {color:#111b32}
+.cta p {color:#35425a}
+.cta .eyebrow {color:#2768ff}
+@media(max-width:850px) {
+  html body .hero.space-coaster-hero {aspect-ratio:1836 / 856;min-height:0}
+  #simulation.project.feature.simulation-wide {grid-template-columns:minmax(0,1fr)}
+  #simulation .gallery img {max-height:270px}
+}
+</style>
 </head><body>
 <header class="nav"><a class="brand" href="#top">PN<span>.</span></a><button aria-label="Toggle navigation" class="menu">☰</button><nav><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#cad-work">CAD</a><a href="#simulation">ANSYS</a><a href="#extracurricular">Extracurricular</a><a href="#leadership">Leadership &amp; Community Service</a><a href="#business">Business</a><a href="#skills">Skills</a></nav></header><main id="top">
 <section class="hero space-coaster-hero"><div><p class="eyebrow">AEROSPACE + MECHANICAL ENGINEERING</p><h1>Paul<br/>Norris<span>.</span></h1><p class="lead">Aerospace &amp; Mechanical Engineering student at UCF. Interested in hands-on design, autonomous systems, and the engineering behind extraordinary experiences.</p><div class="actions"><a class="btn primary" href="#experience">Professional Experience</a><a class="btn" href="#projects">Explore Projects</a></div></div><div class="hero-card portrait-card"><img alt="Portrait of Paul Norris" src="paul-headshot.jpg"/><div class="caption"><b>Engineering, driven by curiosity.</b><span>UCF • Aerospace + Mechanical</span></div></div></section>
