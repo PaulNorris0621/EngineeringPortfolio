@@ -310,6 +310,47 @@ html body section.hero.space-coaster-hero .actions a.btn:focus-visible {
  }
 }
 </style>
+
+<style id="hero-desktop-smaller">
+@media (min-width: 701px) {
+  html body section.hero.space-coaster-hero {
+    width: min(96%, 1600px) !important;
+    max-width: 1600px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 1691 / 930 !important;
+    background-size: 100% 100% !important;
+  }
+}
+</style>
+
+<style id="hero-button-alignment-polish">
+@media (min-width:701px) {
+ html body section.hero.space-coaster-hero .actions a.btn,
+ html body section.hero.space-coaster-hero .actions a.btn:hover {
+   outline: none !important;
+   outline-offset: 0 !important;
+   border: 0 !important;
+   box-shadow: none !important;
+   background: transparent !important;
+ }
+ html body section.hero.space-coaster-hero .actions a.btn::before,
+ html body section.hero.space-coaster-hero .actions a.btn::after {
+   display: none !important;
+   content: none !important;
+ }
+ html body section.hero.space-coaster-hero .actions a.btn:first-child {
+   left:2.35% !important;top:69.65% !important;
+   width:18.25% !important;height:8.9% !important;
+ }
+ html body section.hero.space-coaster-hero .actions a.btn:nth-child(2) {
+   left:21.7% !important;top:69.65% !important;
+   width:17.7% !important;height:8.9% !important;
+ }
+}
+</style>
 </head><body>
 <header class="nav"><a class="brand" href="#top">PN<span>.</span></a><button aria-label="Toggle navigation" class="menu">☰</button><nav><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#cad-work">CAD</a><a href="#simulation">ANSYS</a><a href="#extracurricular">Extracurricular</a><a href="#leadership">Leadership &amp; Community Service</a><a href="#business">Business</a><a href="#skills">Skills</a></nav></header><main id="top">
 <section aria-label="Paul Norris engineering portfolio introduction" class="hero space-coaster-hero"><div><p class="eyebrow">AEROSPACE + MECHANICAL ENGINEERING</p><h1>Paul<br/>Norris<span>.</span></h1><p class="lead">Aerospace &amp; Mechanical Engineering student at UCF, passionate about themed entertainment, CAD modeling, and hands-on fabrication. Turning creative concepts into detailed designs and real-world experiences.</p><div class="actions"><a class="btn primary" href="#experience">View My Work</a><a class="btn" href="#projects">Explore Projects</a></div></div><div class="hero-card portrait-card"><img alt="Portrait of Paul Norris" src="paul-headshot.jpg"/><div class="caption"><b>Engineering, driven by curiosity.</b><span>UCF • Aerospace + Mechanical</span></div></div></section>
